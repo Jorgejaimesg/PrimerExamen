@@ -3,7 +3,7 @@ import modulos.corefiles as cf
 import sys
 import modulos.reusable as r
 import modulos.empleados as e
-import colillas as c
+import modulos.colillas as c
 data_inventario = {}
 def main_menu():
     empleados = cf.readDataFile("empresa.json")
