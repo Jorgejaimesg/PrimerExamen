@@ -39,7 +39,7 @@ def main_menu():
 
 def empleados_menu():
     def wrapper(func,*params):
-        cf.clear_screen()
+        r.clear_screen()
         func(*params)
         empleados_menu()
 
@@ -67,12 +67,12 @@ def empleados_menu():
     elif op == "5":
         wrapper(main_menu)
     else:
-        cf.clear_screen()
+        r.clear_screen()
         empleados_menu()
 
 def colillas_menu():
     def wrapper(func,*params):
-        cf.clear_screen()
+        r.clear_screen()
         func(*params)
         empleados_menu()
 
@@ -97,5 +97,5 @@ def colillas_menu():
     elif op == "4":
         wrapper(main_menu)
     else:
-        cf.clear_screen()
+        r.clear_screen()
         empleados_menu()
