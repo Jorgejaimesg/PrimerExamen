@@ -1,7 +1,6 @@
 import os
 import json
-import reusable as r
-BASE='Tercer_ejercicio/data/'
+BASE='Cuarto_Ejercicio/data/'
 
         
 def checkFile(archivo:str,data):

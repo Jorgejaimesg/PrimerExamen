@@ -1,5 +1,5 @@
-import reusable as r
-import corefiles as cf
+import modulos.reusable as r
+import modulos.corefiles as cf
 from tabulate import tabulate
 def modify(data, srcData):
     if len(data) <= 0:

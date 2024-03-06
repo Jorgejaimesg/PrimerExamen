@@ -1,5 +1,5 @@
-import corefiles as cf
-import reusable as r
+import modulos.corefiles as cf
+import modulos.reusable as r
 from datetime import datetime
 from tabulate import tabulate
 def addcolillas(archivo:str,data):
