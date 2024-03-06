@@ -18,15 +18,15 @@ def menu():
         print('1. Agregar \n2. Buscar\n3. Salir')
         op=input('->')
         if op=='1':
-            nombre=cf.checkinput('str','Ingrese el nombre')
-            apellido=cf.checkinput('str','Ingrese el o los apellidos')
-            dirección=cf.checkinput('str','Ingrese la direccion')
-            ciudad=cf.checkinput('str','Ingrese la ciudad')
-            longitud=cf.checkinput('float','Ingrese la longitud')
-            latitud=cf.checkinput('float','Ingrese la latitud')
-            email=cf.checkinput('str','Ingrese el email')
-            edad=cf.checkinput('int','Ingrese la edad')
-            ocupación= cf.checkinput('str','Ingrese la ocupacion')
+            nombre=cf.checkinput('str','Ingrese el nombre: ')
+            apellido=cf.checkinput('str','Ingrese el o los apellidos: ')
+            dirección=cf.checkinput('str','Ingrese la direccion: ')
+            ciudad=cf.checkinput('str','Ingrese la ciudad: ')
+            longitud=cf.checkinput('float','Ingrese la longitud: ')
+            latitud=cf.checkinput('float','Ingrese la latitud: ')
+            email=cf.checkinput('str','Ingrese el email: ')
+            edad=cf.checkinput('int','Ingrese la edad: ')
+            ocupación= cf.checkinput('str','Ingrese la ocupacion: ')
 
             estudiante={
                 'nombre':nombre,
