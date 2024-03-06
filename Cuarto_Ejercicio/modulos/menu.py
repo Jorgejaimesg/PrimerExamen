@@ -88,7 +88,7 @@ def colillas_menu():
     op = input("\n>> ")
 
     if op == "1":
-        wrapper(c.addcolillas,data_empleados)
+        wrapper(c.addcolillas,'empresa.json',data_empleados)
     elif op == "2":
         cf.clear_screen()
         wrapper(c.total,data_empleados)
