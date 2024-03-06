@@ -19,7 +19,7 @@ def menu():
         print('1. Agregar \n2. Buscar\n3. Salir')
         op=input('->')
         if op=='1':
-            id=cf.checkinput('str','Ingrese el id: ')
+            id=cf.checkinput('str','Ingrese el id: ').upper
             nombre=cf.checkinput('str','Ingrese el nombre: ')
             valorUnitario=cf.checkinput('float','Ingrese el valor unitario: ')
             stockmin=cf.checkinput('int','Ingrese el stock minimo: ')
@@ -36,7 +36,7 @@ def menu():
             data_tienda.update({id:Producto})
             cf.addData('tienda.json',data_tienda)
         elif op=='2':
-            buscar=input('ingrese el id del estudiante')
+            buscar=input('ingrese el id del estudiante').upper
             if buscar in data_tienda:
                 print(data_tienda[buscar])
                 cf.pause_screen()
