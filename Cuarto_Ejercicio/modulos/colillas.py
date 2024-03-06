@@ -4,7 +4,7 @@ from datetime import datetime
 from tabulate import tabulate
 def addcolillas(archivo:str,data):
     id=r.checkinput('str','Ingrese el id del empleado').upper()
-    nro=len(data[id]['colilla'])+1
+    nro=len(data[id]['colillas'])+1
 
     diasTrabajados=r.checkinput('int','Ingrese los dias trabajados, recuerde que se le paga por dia completo').upper()
     horasExtras=r.checkinput('float','ingrese las horas extra trabajadas').upper()
