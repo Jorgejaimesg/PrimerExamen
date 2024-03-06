@@ -90,7 +90,7 @@ def colillas_menu():
     if op == "1":
         wrapper(c.addcolillas,'empresa.json',data_empleados)
     elif op == "2":
-        cf.clear_screen()
+        r.clear_screen()
         wrapper(c.total,data_empleados)
     elif op == "3":
         wrapper(c.searchcolillas,data_empleados)
