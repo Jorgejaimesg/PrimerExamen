@@ -6,11 +6,11 @@ def addcolillas(archivo:str,data):
     id=r.checkinput('str','Ingrese el id del empleado').upper()
     nro=len(data[id]['colillas'])+1
 
-    diasTrabajados=r.checkinput('int','Ingrese los dias trabajados, recuerde que se le paga por dia completo').upper()
-    horasExtras=r.checkinput('float','ingrese las horas extra trabajadas').upper()
-    valorDia=r.checkinput('float','Ingrese el valor de un dia de trabajo').upper()
-    descuentoxCafeteria=r.checkinput('float','Ingrese el monto consumido en cafeteria').upper()
-    cuotaPrestamo=r.checkinput('float','Ingrese el valor de la cuota del prestamo que solicito').upper()
+    diasTrabajados=r.checkinput('int','Ingrese los dias trabajados, recuerde que se le paga por dia completo')
+    horasExtras=r.checkinput('float','ingrese las horas extra trabajadas')
+    valorDia=r.checkinput('float','Ingrese el valor de un dia de trabajo')
+    descuentoxCafeteria=r.checkinput('float','Ingrese el monto consumido en cafeteria')
+    cuotaPrestamo=r.checkinput('float','Ingrese el valor de la cuota del prestamo que solicito')
     mes=r.checkinput('str','ingrese el mes del pago')
     dia=r.checkinput('int','ingrese el dia del pago')
     fechapago=(f'{dia}/{mes}/2024')
