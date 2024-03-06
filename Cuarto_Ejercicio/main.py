@@ -1,6 +1,6 @@
 import modulos.menu as m
 def main():
-    m.menu()
+    m.main_menu()
     
 if __name__ == '__main__':
     main()
