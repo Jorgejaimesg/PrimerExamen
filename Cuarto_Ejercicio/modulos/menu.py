@@ -4,8 +4,9 @@ import sys
 import modulos.reusable as r
 import modulos.empleados as e
 import modulos.colillas as c
-data_inventario = {}
+empresa = {}
 def main_menu():
+    cf.checkFile('empresa.json',empresa)
     empleados = cf.readDataFile("empresa.json")
     global data_empleados
     data_empleados = empleados
