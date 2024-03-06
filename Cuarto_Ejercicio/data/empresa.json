@@ -3,6 +3,16 @@
         "id": "AS",
         "nombre": "as",
         "cargo": "jefe IT",
-        "colillas": {}
+        "colillas": {
+            "1": {
+                "mesPagado": "23",
+                "fechaPago": "23/23/2024",
+                "sueldoBase": 2829.0,
+                "valorTotalHrasExtras": 126500.0,
+                "cuotaPrestamo": 23.0,
+                "descuentoxCafeteria": 23.0,
+                "totalAPagar": 129283.0
+            }
+        }
     }
 }

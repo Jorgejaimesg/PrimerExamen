@@ -43,13 +43,13 @@ def searchcolillas(data):
             mes,fecha,sueldo_base,extras,prestamo,cafeteria,total=colilla.values()
             displayList = [['Id',id],['Mes',mes],['Fecha',fecha],['Sueldo Base',sueldo_base],['Horas Extra',extras],['Cuota prestamo',prestamo],['Consummido en cafeteria',cafeteria],['Total a pagar',total]]
             print(tabulate(displayList,tablefmt="fancy_grid"))
-            cf.pause_screen()
-            cf.clear_screen()
+            r.pause_screen()
+            r.clear_screen()
         else:
             r.showError(f'No se genera pago aun para {valor}')
     else: 
         r.showError(f'la persona con el id: {valor} no se encuentra registrada')
-        cf.clear_screen()
+        r.clear_screen()
 
 def total(data):
     valor = input("Ingrese el id de la persona a buscar -> ").upper()
@@ -61,10 +61,10 @@ def total(data):
             mes,fecha,sueldo_base,extras,prestamo,cafeteria,total=colilla.values()
             displayList = [['Id',id],['Total a pagar',total]]
             print(tabulate(displayList,tablefmt="fancy_grid"))
-            cf.pause_screen()
-            cf.clear_screen()
+            r.pause_screen()
+            r.clear_screen()
         else:
             r.showError(f'No se genera pago aun para {valor}')
     else: 
         r.showError(f'la persona con el id: {valor} no se encuentra registrada')
-        cf.clear_screen()
+        r.clear_screen()

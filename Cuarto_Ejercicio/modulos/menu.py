@@ -98,4 +98,4 @@ def colillas_menu():
         wrapper(main_menu)
     else:
         r.clear_screen()
-        empleados_menu()
+        colillas_menu()
