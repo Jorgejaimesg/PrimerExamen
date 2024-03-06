@@ -1,0 +1,9 @@
+{
+    "aa": {
+        "id": "aa",
+        "nombre": "asd",
+        "valorUnitario": 2331.0,
+        "stockmin": 123,
+        "stockmax": 312
+    }
+}
