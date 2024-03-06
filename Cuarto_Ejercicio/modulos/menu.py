@@ -55,9 +55,9 @@ def empleados_menu():
     op = input("\n>> ")
 
     if op == "1":
-        wrapper(e.addpersonas,data_empleados)
+        wrapper(e.addpersonas,'empresa.json',data_empleados)
     elif op == "2":
-        cf.clear_screen()
+        r.clear_screen()
         mod = input('Ingrese el id del empleado a modificar -> ').upper()
         wrapper(e.modify,data_empleados.get(mod,{}),data_empleados)
     elif op == "3":

@@ -1,1 +1,8 @@
-{}
+{
+    "AS": {
+        "id": "AS",
+        "nombre": "as",
+        "cargo": "jefe IT",
+        "colillas": {}
+    }
+}

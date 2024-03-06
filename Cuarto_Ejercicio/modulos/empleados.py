@@ -33,7 +33,7 @@ def addpersonas(archivo:str,data):
             cargo='Almacenista'
             isocupation=False
         elif op=='2':
-            carg='jefe IT'
+            cargo='jefe IT'
             isocupation=False
         elif op=='3':
             cargo='Administrador'
@@ -78,13 +78,13 @@ def search(data):
             id,nombre,cargo,colilla = result.values()
             displayList = [['Id',id],['Nombre',nombre],['cargo',cargo]]
             print(tabulate(displayList,tablefmt="fancy_grid"))
-            cf.pause_screen()
-            cf.clear_screen()
+            r.pause_screen()
+            r.clear_screen()
         else:
             r.showError(f'No hay activos registrados con el codigo {valor}')
     else: 
         r.showError('No hay personal registrado')
-        cf.clear_screen()
+        r.clear_screen()
         
         
 

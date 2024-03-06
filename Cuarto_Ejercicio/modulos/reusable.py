@@ -48,11 +48,15 @@ def showError(message):
 
 def yesORnot(message):
     os.system("cls")
-    while(True):
+    isrunning=True
+    while isrunning:
         continuar = checkinput("str", f"{message} Si(s) o No(n)").upper()
         if continuar == "s":
+            isrunning=False
             return True
         elif continuar == "n":
+            isrunning=False
             return False
+        
         else:
             showError("Error Opcion no Reconocida Ingresa s para (Si) o n Para (No)")
