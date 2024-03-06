@@ -1,7 +1,7 @@
 import reusable as r
 import corefiles as cf
 from tabulate import tabulate
-def modifyPersonas(data, srcData):
+def modify(data, srcData):
     if len(data) <= 0:
         r.showError('No se encontro informacion sobre ese activo')
         r.clear_screen()
@@ -49,15 +49,7 @@ def addpersonas(archivo:str,data):
         'id':id,
         'nombre':nombre,
         'cargo':cargo,
-        'colilla':{
-            'mesPagado':'',
-            'fechaPago':'',
-            'sueldoBase':0,
-            'valorTotalHrasExtras':0,
-            'cuotaPrestamo':0,
-            'descuentoxCafeteria':0,
-            'totalAPagar':0
-        }       
+        'colillas':{}       
     }
         
     data.update({id:persona})
@@ -78,7 +70,7 @@ def delData(data):
         r.showError('No hay informacion registrada')
     r.clear_screen()
         
-def searchPersonal(data):
+def search(data):
     if len(data):
         valor = input("Ingrese el id de la persona a buscar -> ").upper()
         if valor in data:

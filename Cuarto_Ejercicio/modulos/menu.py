@@ -3,6 +3,7 @@ import modulos.corefiles as cf
 import sys
 import modulos.reusable as r
 import modulos.empleados as e
+import colillas as c
 data_inventario = {}
 def main_menu():
     empleados = cf.readDataFile("empresa.json")
@@ -29,7 +30,7 @@ def main_menu():
     if op == "1":
         wrapper(empleados_menu)
     elif op == "2":
-        wrapper(personal_menu)
+        wrapper(colillas_menu)
     elif op == "3":
         sys.exit(("\033[92m{}\033[00m" .format('Vuelva pronto!')))
     else:
@@ -57,12 +58,42 @@ def empleados_menu():
     elif op == "2":
         cf.clear_screen()
         mod = input('Ingrese el id del empleado a modificar -> ').upper()
-        wrapper(r.modifyActivo,data_empleados.get(mod,{}),data_empleados)
+        wrapper(e.modify,data_empleados.get(mod,{}),data_empleados)
     elif op == "3":
-        wrapper(r.delData,data_empleados)
+        wrapper(e.delData,data_empleados)
     elif op == "4":
-        wrapper(r.searchActivo,data_empleados)
+        wrapper(e.search,data_empleados)
     elif op == "5":
+        wrapper(main_menu)
+    else:
+        cf.clear_screen()
+        empleados_menu()
+
+def colillas_menu():
+    def wrapper(func,*params):
+        cf.clear_screen()
+        func(*params)
+        empleados_menu()
+
+    title = """
+################
+#  COLILLAS   #
+################
+    """
+    print(title)
+    menu = [["1.", "Agregar colilla"],["2.", "Total a pagar"],["3.", "Buscar colilla"],["4.", "Salir"]]
+    print(tabulate(menu, tablefmt="grid"))
+
+    op = input("\n>> ")
+
+    if op == "1":
+        wrapper(c.addcolillas,data_empleados)
+    elif op == "2":
+        cf.clear_screen()
+        wrapper(c.total,data_empleados)
+    elif op == "3":
+        wrapper(c.searchcolillas,data_empleados)
+    elif op == "4":
         wrapper(main_menu)
     else:
         cf.clear_screen()
