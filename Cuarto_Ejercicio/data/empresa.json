@@ -1,17 +1,44 @@
 {
-    "AS": {
-        "id": "AS",
-        "nombre": "as",
-        "cargo": "jefe IT",
+    "11": {
+        "id": "11",
+        "nombre": "11",
+        "cargo": "Almacenista",
+        "Salario": 11,
         "colillas": {
-            "1": {
-                "mesPagado": "23",
-                "fechaPago": "23/23/2024",
-                "sueldoBase": 2829.0,
-                "valorTotalHrasExtras": 126500.0,
-                "cuotaPrestamo": 23.0,
-                "descuentoxCafeteria": 23.0,
-                "totalAPagar": 129283.0
+            "4": {
+                "mesPagado": "3",
+                "fechaPago": "2024-03-07 14:50:48.562550",
+                "sueldoBase": 11.0,
+                "valorTotalHrasExtras": 60500.0,
+                "cuotaPrestamo": 11.0,
+                "descuentoxCafeteria": 11.0,
+                "totalAPagar": 60489.0
+            },
+            "3": {
+                "mesPagado": "3",
+                "fechaPago": "2024-03-07 15:13:47.997149",
+                "sueldoBase": 11.0,
+                "valorTotalHrasExtras": 308000.0,
+                "cuotaPrestamo": 56.0,
+                "descuentoxCafeteria": 565.0,
+                "totalAPagar": 307390.0
+            }
+        }
+    },
+    "2": {
+        "id": "2",
+        "nombre": "2",
+        "cargo": "jefe IT",
+        "Salario": 2,
+        "colillas": {
+            "3": {
+                "mesPagado": "3",
+                "fechaPago": "2024-03-07 15:14:09.166446",
+                "sueldoBase": 2.0,
+                "valorTotalHrasExtras": 31157500.0,
+                "cuotaPrestamo": 65.0,
+                "descuentoxCafeteria": 65.0,
+                "totalAPagar": 31157372.0
             }
         }
     }

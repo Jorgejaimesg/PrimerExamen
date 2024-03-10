@@ -1,1 +1,15 @@
-{}
+{
+    "ASD": {
+        "nombre": "ASD",
+        "apellido": "asd",
+        "direcci\u00f3n": "asd",
+        "ubicacion": {
+            "ciudad": "das",
+            "longitud": 123.0,
+            "latitud": 123.0
+        },
+        "email": "123",
+        "edad": 321,
+        "ocupaci\u00f3n": "123"
+    }
+}

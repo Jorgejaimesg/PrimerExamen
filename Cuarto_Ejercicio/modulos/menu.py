@@ -59,7 +59,7 @@ def empleados_menu():
     elif op == "2":
         r.clear_screen()
         mod = input('Ingrese el id del empleado a modificar -> ').upper()
-        wrapper(e.modify,data_empleados.get(mod,{}),data_empleados)
+        wrapper(e.modify,data_empleados.get(mod),data_empleados)
     elif op == "3":
         wrapper(e.delData,data_empleados)
     elif op == "4":
@@ -74,7 +74,7 @@ def colillas_menu():
     def wrapper(func,*params):
         r.clear_screen()
         func(*params)
-        empleados_menu()
+        colillas_menu()
 
     title = """
 ################

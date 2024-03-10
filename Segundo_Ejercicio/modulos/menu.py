@@ -18,6 +18,7 @@ def menu():
         print('1. Agregar \n2. Buscar\n3. Salir')
         op=input('->')
         if op=='1':
+            id=cf.checkinput('str','Ingrese el id del estudiante: ').upper()
             nombre=cf.checkinput('str','Ingrese el nombre: ').upper()
             apellido=cf.checkinput('str','Ingrese el o los apellidos: ')
             dirección=cf.checkinput('str','Ingrese la direccion: ')
@@ -29,6 +30,7 @@ def menu():
             ocupación= cf.checkinput('str','Ingrese la ocupacion: ')
 
             estudiante={
+                'id':id,
                 'nombre':nombre,
                 'apellido':apellido,
                 'dirección':dirección,
@@ -40,7 +42,7 @@ def menu():
                 'edad':edad,
                 'ocupación':ocupación
             }
-            data_estudiantes.update({nombre:estudiante})
+            data_estudiantes.update({id:estudiante})
             cf.addData('estudiantes.json',data_estudiantes)
         elif op=='2':
             buscar=input('ingrese el nombre del estudiante').upper()

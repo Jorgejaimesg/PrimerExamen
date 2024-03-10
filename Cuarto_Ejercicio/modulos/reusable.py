@@ -51,10 +51,10 @@ def yesORnot(message):
     isrunning=True
     while isrunning:
         continuar = checkinput("str", f"{message} Si(s) o No(n)").upper()
-        if continuar == "s":
+        if continuar == "S":
             isrunning=False
             return True
-        elif continuar == "n":
+        elif continuar == "N":
             isrunning=False
             return False
         

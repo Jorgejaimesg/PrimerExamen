@@ -8,12 +8,12 @@ def modify(data, srcData):
     else:
         for key in data.keys():
             if(key != 'id'):
-                if key != 'colilla':
+                if key != 'colillas':
                         if bool(r.yesORnot(f'Desea modificar el {key}')):
                             r.clear_screen()
                             data[key] = input(f'Ingrese el nuevo valor para {key}: ')
             srcData.update(data)
-        r.UpdateFile('empresa.json', srcData)
+        cf.addData('empresa.json', srcData)
         r.showSuccess('Informacion modificada correctamente')
         r.clear_screen()
 
@@ -21,6 +21,7 @@ def addpersonas(archivo:str,data):
     
     id=r.checkinput('str','Ingrese el id: ').upper()
     nombre=r.checkinput('str','Ingrese el nombre: ')
+    SalarioBase=r.checkinput('int','Ingrese el salario base del empreado')
     r.clear_screen()
     opc=['1','2','3','4','5']
     isocupation=True
@@ -49,6 +50,7 @@ def addpersonas(archivo:str,data):
         'id':id,
         'nombre':nombre,
         'cargo':cargo,
+        'Salario':SalarioBase,
         'colillas':{}       
     }
         
@@ -75,8 +77,8 @@ def search(data):
         valor = input("Ingrese el id de la persona a buscar -> ").upper()
         if valor in data:
             result= data.get(valor)
-            id,nombre,cargo,colilla = result.values()
-            displayList = [['Id',id],['Nombre',nombre],['cargo',cargo]]
+            id,nombre,cargo,colilla,salario = result.values()
+            displayList = [['Id',id],['Nombre',nombre],['cargo',cargo],['salario',salario]]
             print(tabulate(displayList,tablefmt="fancy_grid"))
             r.pause_screen()
             r.clear_screen()

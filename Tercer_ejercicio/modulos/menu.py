@@ -1,10 +1,12 @@
 import modulos.corefiles as cf
 from tabulate import tabulate
 def menu():
+    cf.clear_screen()
     tienda={}
     cf.checkFile('tienda.json',tienda)
+    tiendas=cf.readDataFile('tienda.json')
     global data_tienda
-    data_tienda=cf.readDataFile('tienda.json')
+    data_tienda=tiendas
 
     title="""
     ###############################
@@ -19,7 +21,7 @@ def menu():
         print('1. Agregar \n2. Buscar\n3. Salir')
         op=input('->')
         if op=='1':
-            id=cf.checkinput('str','Ingrese el id: ').upper
+            id=cf.checkinput('str','Ingrese el id: ').upper() ##ERROR NO PUSE PARENTESIS
             nombre=cf.checkinput('str','Ingrese el nombre: ')
             valorUnitario=cf.checkinput('float','Ingrese el valor unitario: ')
             stockmin=cf.checkinput('int','Ingrese el stock minimo: ')
@@ -31,8 +33,7 @@ def menu():
             'nombre':nombre,
             'valorUnitario':valorUnitario,
             'stockmin':stockmin,
-            'stockmax':stockmax
-            }
+            'stockmax':stockmax}
             data_tienda.update({id:Producto})
             cf.addData('tienda.json',data_tienda)
         elif op=='2':
