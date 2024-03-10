@@ -12,7 +12,7 @@
                 "valorTotalHrasExtras": 60500.0,
                 "cuotaPrestamo": 11.0,
                 "descuentoxCafeteria": 11.0,
-                "totalAPagar": 60489.0
+                "totalAPagar": 10
             },
             "3": {
                 "mesPagado": "3",
@@ -21,7 +21,7 @@
                 "valorTotalHrasExtras": 308000.0,
                 "cuotaPrestamo": 56.0,
                 "descuentoxCafeteria": 565.0,
-                "totalAPagar": 307390.0
+                "totalAPagar": 30
             }
         }
     },
@@ -38,7 +38,7 @@
                 "valorTotalHrasExtras": 31157500.0,
                 "cuotaPrestamo": 65.0,
                 "descuentoxCafeteria": 65.0,
-                "totalAPagar": 31157372.0
+                "totalAPagar": 10
             }
         }
     }

@@ -61,17 +61,13 @@ def searchcolillas(data):
         r.clear_screen()
 
 def total(data):
-        total=0
-        if len(data):
-            for key,value in data.items():
-                for key1,value1 in data[key].items():
-                    if value1==dict:
-                        for llave,valor in data[key][key1].items():
-                            if valor==dict:
-                                for llave1,valor1 in valor.items():
-                                    if llave1=='totalAPagar':
-                                        total+=valor1
-        
-            print(f'El valor total a pagar es de {total}')
-        else:
-            r.showError(f'No se genera pago')
+    total=0
+    if len(data):
+        for key,value in data.items():
+                if 'colillas'in value:
+                    for item,valor in value['colillas'].items():
+                            total+=valor['totalAPagar']
+    
+        print(f'El valor total a pagar es de {total}')
+    else:
+        r.showError(f'No se genera pago')

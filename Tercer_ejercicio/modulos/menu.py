@@ -16,6 +16,7 @@ def menu():
 
     isRunning=True
     while isRunning:
+        cf.clear_screen()
         print (title)
 
         print('1. Agregar \n2. Buscar\n3. Salir')
@@ -37,7 +38,7 @@ def menu():
             data_tienda.update({id:Producto})
             cf.addData('tienda.json',data_tienda)
         elif op=='2':
-            buscar=input('ingrese el id del estudiante').upper
+            buscar=input('ingrese el id del estudiante').upper()
             if buscar in data_tienda:
                 print(data_tienda[buscar])
                 cf.pause_screen()

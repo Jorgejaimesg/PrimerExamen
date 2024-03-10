@@ -1,9 +1,16 @@
 {
     "ASD": {
         "id": "ASD",
-        "nombre": "ASD",
+        "nombre": "asd",
         "valorUnitario": 12.0,
-        "stockmin": 213,
-        "stockmax": 321
+        "stockmin": 12,
+        "stockmax": 12
+    },
+    "1111": {
+        "id": "1111",
+        "nombre": "planta",
+        "valorUnitario": 123.0,
+        "stockmin": 12,
+        "stockmax": 14
     }
 }
